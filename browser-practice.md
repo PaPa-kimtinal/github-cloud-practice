@@ -11,3 +11,4 @@ This file was created entirely in the GitHub browser interface.
 - Review history
 - Open pull requests
 - Merge changes
+- Review file differences
