@@ -12,3 +12,6 @@ This file was created entirely in the GitHub browser interface.
 - Open pull requests
 - Merge changes
 - Review file differences
+## Web Editor Practice
+
+- Edited using vscode.dev in the browser
