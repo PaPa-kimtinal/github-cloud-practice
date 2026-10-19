@@ -1,10 +1,10 @@
 # Codex Project Instructions
 
-These instructions apply to the GitHub & Cloud Development Practice pilot repository.
-This is an SWF v1.4 **pilot**, not an approval or release of SWF v1.4.
+These instructions apply to the GitHub & Cloud Development Practice repository.
+SWF v1.4 (Phases A/B/E) was **APPROVED & RELEASED on 2026-10-19**. Phases C (automatic synchronization) and D (metrics) remain deferred and unapproved.
 
 ## Working Standard
-- Follow SWF v1.3 until the user explicitly approves the release of v1.4.
+- Follow released SWF v1.4 and preserve all inherited SWF v1.3 security, testing, environment readiness, and production-release gates.
 - Respect project-specific workflow exceptions and explicit user decisions.
 - Do not claim acceptance or release without supporting test evidence and approval.
 
@@ -34,7 +34,14 @@ This is an SWF v1.4 **pilot**, not an approval or release of SWF v1.4.
 - Use isolated staging and synthetic data when release testing is needed.
 - Require an independent review for high-risk changes before production release
   (including authentication, permissions, RLS, payments, migrations, and security).
-- A successful pilot does not by itself authorize SWF v1.4 adoption.
+- SWF v1.4 release authorization covers only approved Phases A/B/E; it does not authorize Phase C/D, destructive operations, automatic cross-project changes, or production deployments.
+
+## Mandatory Codex Cloud Manual Instruction Gate
+
+- Cloud automatic AGENTS.md loading remains **FAIL / unresolved** (Support case 16736756); do not claim it passed.
+- At the start of every new Codex Cloud development task, explicitly read `/workspace/github-cloud-practice/AGENTS.md` and verify repository path, branch, HEAD and relevant worktree state using `git -C /workspace/github-cloud-practice` before changes.
+- Report instruction source as **MANUAL** and confirm active SWF v1.4 and safety/testing rules before implementing. If reading or verification fails, report BLOCKED and stop.
+- Codex Desktop autonomous `.git` writes previously failed with permission errors; use approved non-destructive GitHub/PowerShell routes as needed without changing security permissions.
 
 ## Completion Report
 Summarize:
