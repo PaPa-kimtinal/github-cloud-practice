@@ -1,9 +1,9 @@
 # SWF v1.4 — Project 18 Pilot Closeout and Release Readiness
 
-**Status:** DRAFT FOR FINAL REVIEW — NOT RELEASED  
+**Status:** RELEASED — SWF v1.4 (approved and locked 2026-10-19)  
 **Owner:** HUB 18 / WORK 18.02 — GitHub & Cloud Development Practice  
-**Current authoritative standard:** SWF v1.3  
-**Scope:** Project 18 pilot only; no production-wide adoption from this document
+**Current authoritative standard:** SWF v1.4 (released scope: Phases A, B, E only)  
+**Scope:** Release acceptance record established in Project 18. SWF v1.4 governs new work under its approved scope; project-specific safeguards and explicit release gates remain in force. This repository does not itself update every existing project document or deployed system.
 
 ## 1. Approved manual fallback and evidence discipline
 
@@ -55,7 +55,7 @@ are authorized by this kickoff prompt.
 
 **Git caveat:** Codex Desktop's autonomous writes to `.git` failed with `.git/index.lock` permission denial. Standard Windows PowerShell Git operations succeeded. Keep this limitation disclosed; do not remove sandbox protections, elevate privilege, or mark autonomous Codex Git actions PASS. For appropriate low-risk GitHub operations, the connected ChatGPT–GitHub workflow is another approved pilot route.
 
-**Proposed Phase A disposition:** eligible for final pilot acceptance *with the manual Cloud kickoff gate and an explicit open-defect record*. This document does not itself grant final acceptance.
+**Phase A disposition:** **APPROVED & LOCKED on 2026-10-19** with the mandatory manual Cloud startup gate and explicit open automatic-loading FAIL. This is an accepted exception, not a false test PASS.
 
 ## 3. Phase B — central status register
 
@@ -67,11 +67,11 @@ are authorized by this kickoff prompt.
 - **Codex** for substantial multi-file development, debugging, local/automated testing and builds.
 - **Risk-based independent review**, staging validation and explicit production approval remain mandatory when relevant, regardless of tool.
 - Do not route work in a way that removes necessary tests or weakens access controls.
-- This documentation-only GitHub branch/PR is an isolated practical trial of the ChatGPT + GitHub route; evaluate separately, and do not merge without explicit user approval.
+- This documentation-only GitHub branch/PR is a practical trial of the ChatGPT + GitHub route; user explicitly authorized PR #6 merge on 2026-10-19. No similar future merges are automatically authorized.
 
 ## 4A. Existing controls retained without exception
 
-SWF v1.4 does **not** supersede or weaken existing SWF v1.3 controls while unreleased, or after release unless explicitly revised and approved:
+SWF v1.4 **retains all SWF v1.3 safety and test controls** unless a specific change is separately approved:
 
 - **Environment Readiness Gate:** verify required GitHub, Supabase, Vercel, Codex/PC, sandbox, credentials, access, and tooling prerequisites relevant to each task before implementation. Report missing capabilities as BLOCKED; do not bypass by assumption.
 - **AI First, User Last:** routine automated testing is AI-/runner-managed after any authorized setup. Do not shift normal test execution to the user merely to conserve Codex usage.
@@ -82,9 +82,9 @@ SWF v1.4 does **not** supersede or weaken existing SWF v1.3 controls while unrel
 
 **Phase C — automated synchronization** and **Phase D — performance metrics** were explicitly deferred and require separate authorization. They are not implicit prerequisites for the A+B+E pilot release scope, and this document does not authorize their implementation.
 
-## 6. Phase E — final review and release gate
+## 6. Phase E — approved release gate (2026-10-19)
 
-Before calling SWF v1.4 `RELEASED`, complete all of the following:
+Release authorized by the user on 2026-10-19; the following acceptance items are recorded:
 
 - [x] Phase B B1–B5 accepted and locked
 - [x] Phase A evidence recorded, including local tests and explicit Cloud manual read
@@ -93,13 +93,14 @@ Before calling SWF v1.4 `RELEASED`, complete all of the following:
 - [x] Codex Desktop autonomous Git-permission limitation disclosed with controlled workaround
 - [x] Smart Tool Routing approved for pilot evaluation, without loosening safety or testing
 - [x] Retained SWF v1.3 environment readiness, AI-managed testing and security/release gates explicitly documented
-- [ ] Review/accept Phase A with the documented exceptions and determine if extra targeted manual-gate validation is needed
-- [ ] Review/accept the v1.4 final release scope and cross-project adoption/handoff wording
-- [ ] Receive **explicit user approval** for the SWF v1.4 release
-- [ ] After approval only: update the authoritative workflow/version references and any rollout documentation, with verification and traceable release record
+- [x] Phase A APPROVED & LOCKED with documented Cloud automatic-loading FAIL and manual-load exception
+- [x] Phase E scope APPROVED; Phases A/B/E release only; no automatic cross-project file rewrite or uncontrolled rollout
+- [x] Explicit user approval for SWF v1.4 release — 2026-10-19
+- [x] Pilot GitHub release record and root AGENTS.md revised through approved PR #6; verify merge on main
+- [ ] Synchronize other central/project master instructions as access permits; track unupdated locations explicitly (not an authorization to overwrite unrelated project gates)
 
-**Until the final release approval:** SWF v1.3 remains authoritative. Do not claim Phase A fully accepted, publish a v1.4 release, synchronize registers automatically, modify other production projects, or merge into `main` based on this draft.
+**Release boundary:** SWF v1.4 is authorized and released for its approved A/B/E governance scope on 2026-10-19. SWF v1.3 remains the inherited safety baseline. No automatic register synchronization, Phase C/D implementation, unrelated production deployment, or permissions bypass is authorized.
 
-## 7. Immediate next decision
+## 7. Post-release follow-up
 
-Review this proposed exception-based Phase A closeout and the Phase E checklist. An explicit final release decision remains separate from preparation. OpenAI Support case **16736756** may continue independently.
+Keep the Cloud automatic-loading FAIL and Codex Desktop autonomous Git write limitation visible as unresolved defects. Check OpenAI Support case **16736756** separately. Propagate the release status to canonical instruction sources and appropriate HUB/WORK handoffs without weakening project-specific approval/testing gates. Defer Phases C and D until independently authorized.
