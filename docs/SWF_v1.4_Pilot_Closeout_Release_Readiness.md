@@ -69,6 +69,15 @@ are authorized by this kickoff prompt.
 - Do not route work in a way that removes necessary tests or weakens access controls.
 - This documentation-only GitHub branch/PR is an isolated practical trial of the ChatGPT + GitHub route; evaluate separately, and do not merge without explicit user approval.
 
+## 4A. Existing controls retained without exception
+
+SWF v1.4 does **not** supersede or weaken existing SWF v1.3 controls while unreleased, or after release unless explicitly revised and approved:
+
+- **Environment Readiness Gate:** verify required GitHub, Supabase, Vercel, Codex/PC, sandbox, credentials, access, and tooling prerequisites relevant to each task before implementation. Report missing capabilities as BLOCKED; do not bypass by assumption.
+- **AI First, User Last:** routine automated testing is AI-/runner-managed after any authorized setup. Do not shift normal test execution to the user merely to conserve Codex usage.
+- **Usage protection:** favor focused automated checks before expensive repeated full-suite/browser runs; still perform essential security, regression, and release acceptance tests.
+- **Release safety:** preserve isolated staging where appropriate, risk-based independent security review, traceable Git checkpoints, explicit approvals for dangerous changes, and no unauthorized deployment.
+
 ## 5. Phases C and D are deferred
 
 **Phase C — automated synchronization** and **Phase D — performance metrics** were explicitly deferred and require separate authorization. They are not implicit prerequisites for the A+B+E pilot release scope, and this document does not authorize their implementation.
@@ -83,6 +92,7 @@ Before calling SWF v1.4 `RELEASED`, complete all of the following:
 - [x] Manual Cloud instruction-loading gate specified
 - [x] Codex Desktop autonomous Git-permission limitation disclosed with controlled workaround
 - [x] Smart Tool Routing approved for pilot evaluation, without loosening safety or testing
+- [x] Retained SWF v1.3 environment readiness, AI-managed testing and security/release gates explicitly documented
 - [ ] Review/accept Phase A with the documented exceptions and determine if extra targeted manual-gate validation is needed
 - [ ] Review/accept the v1.4 final release scope and cross-project adoption/handoff wording
 - [ ] Receive **explicit user approval** for the SWF v1.4 release
